@@ -141,7 +141,7 @@ func (r *PostgresProductRepository) GetById(id string) (*models.Product, error) 
 	}
 
 	if err != nil {
-		return nil, fmt.Errorf("feiled to get by id: %w", err)
+		return nil, fmt.Errorf("failed to get by id: %w", err)
 	}
 
 	return &product, nil
